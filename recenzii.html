@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Citește părerile cititorilor BookReview despre cărțile preferate.">
+  <title>BookReview | Recenzii</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="BookReview - pagina principală"><span class="brand-icon">BR</span><span>Book<span class="brand-light">Review</span></span></a><nav class="main-nav" aria-label="Navigare principală"><a href="index.html">Acasă</a><a href="carti.html">Cărți</a><a href="recenzii.html" class="active" aria-current="page">Recenzii</a><a href="adauga-recenzie.html">Adaugă recenzie</a></nav></div></header>
+  <main>
+    <section class="page-banner"><div class="container"><span class="eyebrow">OPINII ȘI IMPRESII</span><h1>Ce spun cititorii?</h1><p>Fiecare recenzie este o perspectivă nouă asupra unei cărți.</p><a class="button button-primary banner-button" href="adauga-recenzie.html">Adaugă recenzia ta <span aria-hidden="true">→</span></a></div></section>
+    <section class="section-space"><div class="container">
+      <div id="savedMessage" class="success-notice" role="status" hidden>Recenzia ta a fost salvată în acest browser!</div>
+      <div class="section-heading"><div><span class="eyebrow">SCRISE DE TINE</span><h2>Recenziile tale</h2></div></div>
+      <p class="muted-note">Recenziile introduse se păstrează doar în browserul tău (localStorage), nu într-o bază de date online.</p>
+      <div class="row g-4" id="myReviews"></div>
+      <div id="myReviewsEmpty" class="empty-inline"><p>Nu ai adăugat încă o recenzie.</p><a href="adauga-recenzie.html" class="text-link">Scrie prima recenzie <span aria-hidden="true">→</span></a></div>
+      <div class="section-heading sample-heading"><div><span class="eyebrow">EXEMPLE DE CONȚINUT</span><h2>Recenzii demonstrative</h2></div></div>
+      <div class="row g-4">
+        <div class="col-md-6"><article class="review-card h-100"><span class="stars" aria-label="5 din 5 stele">★★★★★</span><h3>O carte care te pune pe gânduri</h3><p>„Crimă și pedeapsă” urmărește lupta unui om cu propria conștiință. M-a impresionat felul în care sunt descrise emoțiile personajelor.</p><div class="review-bottom"><span><strong>Andreea</strong> · Crimă și pedeapsă</span><span class="review-label">Exemplu</span></div></article></div>
+        <div class="col-md-6"><article class="review-card h-100"><span class="stars" aria-label="4 din 5 stele">★★★★☆</span><h3>Surprinzător de actuală</h3><p>„1984” vorbește despre control, libertate și adevăr. Este o lectură intensă pe care o recomand celor pasionați de distopii.</p><div class="review-bottom"><span><strong>Mihai</strong> · 1984</span><span class="review-label">Exemplu</span></div></article></div>
+        <div class="col-md-6"><article class="review-card h-100"><span class="stars" aria-label="5 din 5 stele">★★★★★</span><h3>Personaje de care îți amintești</h3><p>„Mândrie și prejudecată” are dialoguri inteligente și personaje memorabile. Mi-a plăcut mult evoluția relațiilor dintre ele.</p><div class="review-bottom"><span><strong>Ioana</strong> · Mândrie și prejudecată</span><span class="review-label">Exemplu</span></div></article></div>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span><strong>BookReview</strong> · Proiect educațional</span><span>Realizat pentru Tema 1 · 2026</span></div></footer>
+</body>
+</html>
